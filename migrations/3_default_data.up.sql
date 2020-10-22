@@ -71,7 +71,7 @@ BEGIN
     superadminproject := (SELECT currval(pg_get_serial_sequence('project', 'id')));
 
     INSERT INTO users (login, password, email, role, type, full_name, expired, metadata)
-    VALUES ('superadmin', '5d39d85bddde885f6579f8121e11eba2', 'superadminemail@domain.com', 'ADMINISTRATOR', 'INTERNAL', 'tester', FALSE,
+    VALUES ('superadmin', '15ab6295d191df1213d7b0526626ea4d', 'superadminemail@domain.com', 'ADMINISTRATOR', 'INTERNAL', 'tester', FALSE,
             '{"metadata": {"last_login": 0}}');
     superadmin := (SELECT currval(pg_get_serial_sequence('users', 'id')));
 
